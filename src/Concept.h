@@ -14,7 +14,7 @@
 
 //Parameters//
 //----------//
-#define OPERATIONS_MAX 10
+#define OPERATIONS_MAX 4
 #define MIN_CONFIDENCE 0.01
 
 //Data structure//

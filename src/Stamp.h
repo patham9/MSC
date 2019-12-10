@@ -13,7 +13,7 @@
 
 //Parameters//
 //----------//
-#define STAMP_SIZE 20
+#define STAMP_SIZE 6
 #define STAMP_FREE 0
 
 //Data structure//

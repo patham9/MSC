@@ -224,7 +224,7 @@ void MSC_Follow_Test()
     puts(">>MSC Follow test start");
     MSC_AddOperation(Encode_Term("op_left"), MSC_Follow_Test_Left); 
     MSC_AddOperation(Encode_Term("op_right"), MSC_Follow_Test_Right); 
-    int simsteps = 1000000;
+    int simsteps = 32000;
     int LEFT = 0;
     int RIGHT = 1;
     int BALL = RIGHT;
@@ -435,7 +435,7 @@ void MSC_Pong2()
         }
         batX=MAX(-batWidth*2,MIN(szX-1+batWidth,batX+batVX*batWidth/2));
         printf("Hits=%d misses=%d ratio=%f time=%ld\n", hits, misses, (float) (((float) hits) / ((float) misses)), currentTime);
-        nanosleep((struct timespec[]){{0, 20000000L}}, NULL); //POSIX sleep
+        //nanosleep((struct timespec[]){{0, 20000000L}}, NULL); //POSIX sleep
         //MSC_Cycles(10);
     }
 }
@@ -561,7 +561,7 @@ void MSC_Pong()
         }
         batX=MAX(0,MIN(szX-1,batX+batVX*batWidth/2));
         printf("Hits=%d misses=%d ratio=%f time=%ld\n", hits, misses, (float) (((float) hits) / ((float) misses)), currentTime);
-        nanosleep((struct timespec[]){{0, 20000000L}}, NULL); //POSIX sleep
+        //nanosleep((struct timespec[]){{0, 20000000L}}, NULL); //POSIX sleep
         //MSC_Cycles(10);
     }
 }
@@ -1306,7 +1306,7 @@ void MSC_Alien()
             defenderX = MIN(1.0, defenderX+0.1);
         }
         printf("shots=%d hits=%d percenta=%f time=%ld\n", shots, hits, (float) (((float) hits) / ((float) shots)), currentTime);
-        //nanosleep((struct timespec[]){{0, 10000000L}}, NULL); //POSIX sleep
+        ////nanosleep((struct timespec[]){{0, 10000000L}}, NULL); //POSIX sleep
         //MSC_Cycles(10);
     }
 }

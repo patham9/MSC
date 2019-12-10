@@ -13,7 +13,7 @@
 
 //Parameters//
 //----------//
-#define CONCEPTS_MAX 1024 //always adjust both
+#define CONCEPTS_MAX 10
 #define USE_HASHING true
 #define PROPAGATE_GOAL_SPIKES true
 #define PROPAGATION_THRESHOLD_INITIAL 0.501
