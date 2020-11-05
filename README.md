@@ -1,3 +1,5 @@
+NEW VERSION WITH NAL-6 inference: https://github.com/opennars/OpenNARS-for-Applications/tree/MSC2
+
 **Minimal Sensorimotor Component**
 
 A minimal component supporting:
